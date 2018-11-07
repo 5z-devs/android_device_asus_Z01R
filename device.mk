@@ -311,6 +311,9 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     libxml2
 
+# RRO
+PRODUCT_ENFORCE_RRO_TARGETS := *
+
 # Seccomp policy
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy
