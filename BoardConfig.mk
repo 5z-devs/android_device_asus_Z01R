@@ -105,11 +105,13 @@ ifeq ($(HOST_OS),linux)
   endif
 endif
 
-# Display
-TARGET_USES_HWC2 := true
-
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
+
+# Graphics
+MAX_VIRTUAL_DISPLAY_DIMENSION := 4096
+TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
+TARGET_USES_HWC2 := true
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
