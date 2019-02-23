@@ -1,7 +1,0 @@
-# Files in rootfs
-type demoapp_file, file_type;
-type fac_file, file_type;
-type log_file, file_type;
-type xrom_file, file_type;
-
-type proc_touchscreen, proc_type, sysfs_type, fs_type;
