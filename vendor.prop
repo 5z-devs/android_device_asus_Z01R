@@ -175,6 +175,9 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 # HEH filename encryption is being dropped
 ro.crypto.volume.filenames_mode=aes-256-cts
 
+# Media
+debug.stagefright.c2inputsurface=-1
+
 # Network manager
 persist.vendor.data.iwlan.enable=true
 persist.vendor.data.mode=concurrent
