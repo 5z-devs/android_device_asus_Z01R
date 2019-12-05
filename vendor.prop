@@ -217,5 +217,8 @@ vendor.usb.use_gadget_hal=1
 # Vendor
 ro.vendor.qti.va_aosp.support=1
 
+# Verity
+ro.apk_verity.mode=2
+
 # Zygote
 zygote.critical_window.minute=10
