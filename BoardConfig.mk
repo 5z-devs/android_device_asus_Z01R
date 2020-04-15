@@ -34,6 +34,7 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := kryo385
 
+# Binder
 TARGET_USES_64_BIT_BINDER := true
 
 # Bootloader
@@ -157,6 +158,7 @@ BOARD_ROOT_EXTRA_SYMLINKS := \
     /vendor/factory:factory
 
 # RIL
+ENABLE_VENDOR_RIL_SERVICE := true
 TARGET_RIL_VARIANT := caf
 
 # Security patch level
