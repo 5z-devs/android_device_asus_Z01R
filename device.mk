@@ -244,7 +244,8 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
-    init.qcom.usb.sh
+    init.qcom.usb.sh \
+    init.qti.dcvs.sh
 
 # IRSC
 PRODUCT_COPY_FILES += \
