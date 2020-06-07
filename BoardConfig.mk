@@ -122,6 +122,9 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 # Network Routing
 TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
 
+# NFC
+TARGET_USES_NQ_NFC := true
+
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/proc/driver/dclick"
 
