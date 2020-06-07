@@ -153,8 +153,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    libdng_sdk.vendor \
-    Snap
+    libdng_sdk.vendor
 
 # Common init scripts
 PRODUCT_PACKAGES += \
