@@ -19,6 +19,9 @@ $(call inherit-product, vendor/asus/Z01R/Z01R-vendor.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o.mk)
 
+# HIDL Hals
+$(call inherit-product, $(LOCAL_PATH)/hidl-hals.mk)
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
@@ -56,6 +59,7 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
 # Permissions
+PRODUCT_PACKAGES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
     frameworks/native/data/etc/android.hardware.audio.pro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.pro.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
@@ -101,10 +105,6 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@2.0-service \
-    android.hardware.audio@5.0-impl \
-    android.hardware.audio.effect@5.0-impl \
-    android.hardware.soundtrigger@2.2-impl \
     audio.a2dp.default \
     audio.r_submix.default \
     audio.usb.default \
@@ -130,16 +130,12 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio@2.0-impl \
     audio.bluetooth.default \
     BluetoothQti \
     libbthost_if \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Boot control
 PRODUCT_PACKAGES_DEBUG += \
-    android.hardware.boot@1.0-impl.recovery \
     bootctrl.sdm845.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
@@ -147,11 +143,8 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service \
     libdng_sdk.vendor \
-    Snap \
-    vendor.qti.hardware.camera.device@1.0.vendor
+    Snap
 
 # Common init scripts
 PRODUCT_PACKAGES += \
@@ -171,47 +164,20 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     ueventd.qcom.rc
 
-# Context Hub
-PRODUCT_PACKAGES += \
-    android.hardware.contexthub@1.0-impl.generic \
-    android.hardware.contexthub@1.0-service
-
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.3-service \
-    android.hardware.graphics.mapper@2.0-impl-qti-display \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
-    libvulkan \
-    vendor.display.config@1.7 \
-    vendor.qti.hardware.display.allocator@1.0-service
+    libvulkan
 
 # Doze
 PRODUCT_PACKAGES += \
     AsusDoze \
     AsusPocketMode
 
-# DRM
-PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0-impl \
-    android.hardware.drm@1.0-service \
-    android.hardware.drm@1.2-service.clearkey
-
-# Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1 \
-    android.hardware.biometrics.fingerprint@2.1-service
-
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
     libqcomfm_jni \
     qcom.fmradio
-
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.0-impl \
-    android.hardware.health@2.0-service
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
@@ -223,21 +189,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/keylayout/gf_input.kl:system/usr/keylayout/gf_input.kl
 
-# HIDL
-PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.base@1.0_system \
-    android.hidl.manager@1.0 \
-    android.hidl.manager@1.0_system
-
 # IPA
 PRODUCT_PACKAGES += \
     libnetfilter_conntrack \
     libnfnetlink
-
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.asus_Z01R
 
 # Media
 PRODUCT_COPY_FILES += \
@@ -263,7 +218,6 @@ PRODUCT_COPY_FILES += \
 
 # Net
 PRODUCT_PACKAGES += \
-    android.system.net.netd@1.0 \
     libandroid_net \
     netutils-wrapper-1.0
 
@@ -280,10 +234,6 @@ PRODUCT_PACKAGES += \
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
-
-# RenderScript
-PRODUCT_PACKAGES += \
-    android.hardware.renderscript@1.0-impl
 
 # Radio
 PRODUCT_PACKAGES += \
@@ -307,19 +257,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
-# Thermal
-PRODUCT_PACKAGES += \
-    android.hardware.thermal@1.0-impl \
-    android.hardware.thermal@1.0-service
-
-# Trust HAL
-PRODUCT_PACKAGES += \
-    vendor.lineage.trust@1.0-service
-
-# Touch
-PRODUCT_PACKAGES += \
-    lineage.touch@1.0-service.asus_Z01R
-
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
@@ -329,26 +266,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
-# USB
-PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.0-impl \
-    android.hardware.vibrator@1.0-service
-
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
-
-# VR
-PRODUCT_PACKAGES += \
-    android.hardware.vr@1.0-impl \
-    android.hardware.vr@1.0-service
-
-# WiFi
-PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service
 
 # WiFi Display
 PRODUCT_PACKAGES += \
