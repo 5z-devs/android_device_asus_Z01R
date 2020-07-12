@@ -106,6 +106,8 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0-impl \
     android.hardware.soundtrigger@2.2-impl \
     audio.a2dp.default \
+    audio.r_submix.default \
+    audio.usb.default \
     tinymix
 
 PRODUCT_COPY_FILES += \
@@ -114,6 +116,15 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:system/etc/permissions/android.hardware.telephony.ims.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml
+
+# Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio@2.0-impl \
+    audio.bluetooth.default \
+    BluetoothQti \
+    libbthost_if \
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor
 
 # Boot control
 PRODUCT_PACKAGES_DEBUG += \
@@ -128,7 +139,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     libdng_sdk.vendor \
-    Snap
+    Snap \
+    vendor.qti.hardware.camera.device@1.0.vendor
 
 # Common init scripts
 PRODUCT_PACKAGES += \
@@ -147,7 +159,8 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     libvulkan \
-    vendor.display.config@1.0
+    vendor.display.config@1.7 \
+    vendor.qti.hardware.display.allocator@1.0-service
 
 # Doze
 PRODUCT_PACKAGES += \
@@ -193,6 +206,11 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0 \
     android.hidl.manager@1.0_system
 
+# IPA
+PRODUCT_PACKAGES += \
+    libnetfilter_conntrack \
+    libnfnetlink
+
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.asus_Z01R
@@ -220,12 +238,24 @@ PRODUCT_PACKAGES += \
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
 
+# QTI
+PRODUCT_PACKAGES += \
+    libqti_vndfwk_detect.vendor
+
 # RenderScript
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
 
-# RIL
-# Interface library needed by odm blobs:
+# Radio
+PRODUCT_PACKAGES += \
+    libjson \
+    librmnetctl
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
+# Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml \
@@ -233,10 +263,6 @@ PRODUCT_PACKAGES += \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
     qti_telephony_utils.xml
-
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
 
 # TextClassifier
 PRODUCT_PACKAGES += \
@@ -288,8 +314,10 @@ PRODUCT_PACKAGES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libdisplayconfig \
-    libqdMetaData.system \
-    libnl
+    libdisplayconfig.vendor \
+    libnl \
+    libqdMetaData \
+    libqdMetaData.system
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
