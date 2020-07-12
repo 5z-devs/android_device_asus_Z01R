@@ -1,0 +1,44 @@
+# Audio
+persist.audio.fluence.voicecall=true
+persist.audio.fluence.voicerec=false
+persist.audio.fluence.speaker=true
+ro.qc.sdk.audio.ssr=false
+ro.qc.sdk.audio.fluencetype=none
+tunnel.audio.encode=true
+ro.config.media_vol_steps=25 
+ro.config.vc_call_vol_steps=7
+
+# Camera
+#camera.disable_zsl_mode=true
+
+# Data modules
+persist.rmnet.data.enable=true
+persist.data.wda.enable=true
+persist.data.df.dl_mode=5
+persist.data.df.ul_mode=5
+persist.data.df.agg.dl_pkt=10
+persist.data.df.agg.dl_size=4096
+persist.data.df.mux_count=8
+persist.data.df.iwlan_mux=9
+persist.data.df.dev_name=rmnet_usb0
+
+# Graphics
+debug.sf.enable_hwc_vds=1
+debug.sf.latch_unsignaled=1
+
+# IMS
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+
+# Media
+audio.offload.video=true \
+media.settings.xml=/system/etc/media_profiles_vendor.xml
+
+# Netflix custom property
+ro.netflix.bsp_rev=Q845-14477-1
+
+# Radio
+ril.subscription.types=NV,RUIM
+telephony.lteOnCdmaDevice=1
+DEVICE_PROVISIONED=1
+ro.telephony.default_network=22,22
