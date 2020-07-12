@@ -7,6 +7,7 @@ ro.qc.sdk.audio.fluencetype=none
 tunnel.audio.encode=true
 ro.config.media_vol_steps=25 
 ro.config.vc_call_vol_steps=7
+qcom.hw.aac.encoder=true
 
 # Camera
 #camera.disable_zsl_mode=true
@@ -42,3 +43,6 @@ ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
 DEVICE_PROVISIONED=1
 ro.telephony.default_network=22,22
+
+# RCS
+persist.rcs.supported=0
