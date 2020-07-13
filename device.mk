@@ -144,6 +144,8 @@ PRODUCT_PACKAGES += \
 
 # Common init scripts
 PRODUCT_PACKAGES += \
+    fstab.qcom \
+    amp_calibration.sh \
     init.asus.rc \
     init.class_main.sh \
     init.msm.usb.configfs.rc \
