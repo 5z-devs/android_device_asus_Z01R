@@ -213,6 +213,10 @@ PRODUCT_PACKAGES += \
     libnetfilter_conntrack \
     libnfnetlink
 
+# Lights
+PRODUCT_PACKAGES += \
+    lights.sdm845
+
 # Media
 PRODUCT_PACKAGES += \
     libc2dcolorconvert \
