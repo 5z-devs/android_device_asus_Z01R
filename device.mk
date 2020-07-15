@@ -281,7 +281,9 @@ PRODUCT_PACKAGES += \
 # Radio
 PRODUCT_PACKAGES += \
     libjson \
-    librmnetctl
+    libprotobuf-cpp-full \
+    librmnetctl \
+    libxml2
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
