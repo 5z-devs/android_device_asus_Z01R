@@ -323,6 +323,10 @@ PRODUCT_TARGET_VNDK_VERSION := 29
 PRODUCT_PACKAGES += \
     vr.sdm845
 
+# VNDK-SP
+PRODUCT_PACKAGES += \
+    vndk-sp
+
 # WiFi
 PRODUCT_PACKAGES += \
     hostapd \
