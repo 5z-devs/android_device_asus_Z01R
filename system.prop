@@ -38,6 +38,10 @@ media.settings.xml=/system/etc/media_profiles_vendor.xml
 # Netflix custom property
 ro.netflix.bsp_rev=Q845-14477-1
 
+# Platform
+ro.board.platform=sdm845
+ro.product.board=sdm845
+
 # Radio
 ril.subscription.types=NV,RUIM
 telephony.lteOnCdmaDevice=1
