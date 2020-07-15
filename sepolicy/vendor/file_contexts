@@ -5,6 +5,9 @@
 /factory(/.*)?          u:object_r:fac_file:s0
 /xrom(/.*)?		        u:object_r:xrom_file:s0
 
+# Fingerprint related nodes
+/sys/devices/platform/soc/0.goodix_gf5228/proximity_state        u:object_r:sysfs_fp_proximity:s0
+
 # Graphics nodes
 /sys/devices/platform/soc/[a-z0-9]+.qcom,mdss_mdp/drm/card([0-3])+/card([0-3])+-DSI-1/hbm_status        u:object_r:sysfs_graphics:s0
 
