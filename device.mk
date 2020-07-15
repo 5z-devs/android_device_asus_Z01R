@@ -301,6 +301,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     textclassifier.bundle1
 
+# Thermal
+PRODUCT_PACKAGES += \
+    thermal.sdm845
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
@@ -312,6 +316,10 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 29
+
+# VR
+PRODUCT_PACKAGES += \
+    vr.sdm845
 
 # WiFi
 PRODUCT_PACKAGES += \
