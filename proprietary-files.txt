@@ -33,6 +33,7 @@ vendor/etc/acdbdata/adsp_avs_config_ER2.acdb
 
 # ADSP
 vendor/bin/adsprpcd
+vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 vendor/lib/libadsp_default_listener.so
@@ -205,7 +206,22 @@ product/lib/vendor.qti.hardware.scve.panorama@1.0.so
 product/lib/vendor.qti.hardware.seccam@1.0.so
 product/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
 system/lib/DataSet/ispDB/ParameterDB.db
+vendor/etc/vstab_db_0_1080p_video_30fps.config
+vendor/etc/vstab_db_0_1080p_video_60fps.config
+vendor/etc/vstab_db_0_21601080p_video_30fps.config
+vendor/etc/vstab_db_0_480p_video_30fps.config
+vendor/etc/vstab_db_0_4k_video_30fps.config
+vendor/etc/vstab_db_0_720p_video_30fps.config
+vendor/etc/vstab_db_1_1080p_video_30fps.config
+vendor/etc/vstab_db_1_21601080p_video_30fps.config
+vendor/etc/vstab_db_1_480p_video_30fps.config
+vendor/etc/vstab_db_1_720p_video_30fps.config
+vendor/etc/vstab_db_2_1080p_video_30fps.config
+vendor/etc/vstab_db_2_21601080p_video_30fps.config
+vendor/etc/vstab_db_2_480p_video_30fps.config
+vendor/etc/vstab_db_2_720p_video_30fps.config
 vendor/etc/camera/camxoverridesettings.txt
+vendor/firmware/CAMERA_ICP.elf
 vendor/lib/camera/components/com.arcsoft.node.capturebokeh.so
 vendor/lib/camera/components/com.arcsoft.node.realtimebokeh.so
 vendor/lib/camera/components/com.asus.node.preview.so
@@ -262,6 +278,20 @@ vendor/lib/camera/fdconfigvideo.bin
 vendor/lib/camera/fdconfigvideolite.bin
 vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/com.qti.chi.override.so
+vendor/lib/libAsusCameraCallLS.so
+vendor/lib/libAsusCameraLSSensorHAL.so
+vendor/lib/libAsusRGBSensorHAL.so
+vendor/lib/libAsusZeniMoji.so
+vendor/lib/libAsusShowFPS.so
+vendor/lib/libgui_vendor.so
+vendor/lib/libmms_hal_vstab.so
+vendor/lib/libmms_gyro_vstab.so
+vendor/lib/libmms_gyro_vstab_auth.so
+vendor/lib/libmms_warper_vstab.so
+vendor/lib/libmorpho_easy_hdr.so
+vendor/lib/libmorpho_image_stab4.so
+vendor/lib/libmorpho_video_refiner.so
+vendor/lib/libst_avatar.so
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libarcsoft_dualcam_refocus.so
 vendor/lib/libarcsoft_face_detection.so
@@ -285,6 +315,21 @@ vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmpbase.so
 vendor/lib/libswregistrationalgo.so
+vendor/lib/libxditk_arch.so
+vendor/lib/libxditk_DITAECInit.so
+vendor/lib/libxditk_ditArchLIB.so
+vendor/lib/libxditk_ditBSP_JNI.so
+vendor/lib/libxditk_ditBSP.so
+vendor/lib/libxditk_DIT_Manager.so
+vendor/lib/libxditk_DIT_MSMv1.so
+vendor/lib/libxditk_ISP.so
+vendor/lib/vendor.qti.hardware.camera.device@1.0.so
+vendor/lib/vendor.qti.hardware.cvp@1.0.so
+vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
+vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so
+vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
+vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
+vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -293,15 +338,19 @@ vendor/lib64/libcdsprpc.so
 vendor/lib64/libfastrpc_utf_stub.so
 vendor/lib64/libsdsprpc.so
 vendor/lib64/libsysmon_cdsp_skel.so
+vendor/lib64/libmdsprpc.so
 vendor/lib/libcdsp_default_listener.so
 vendor/lib/libcdsprpc.so
 vendor/lib/libfastcrc.so
 vendor/lib/libfastrpc_utf_stub.so
 vendor/lib/libsdsprpc.so
 vendor/lib/libsysmon_cdsp_skel.so
+vendor/lib/libmdsprpc.so
 
 # Charger
 vendor/bin/hvdcp_opti
+vendor/bin/init.qti.chg_policy.sh
+vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc
 
 # CNE
 -vendor/app/CneApp/CneApp.apk
@@ -386,49 +435,19 @@ vendor/lib64/libhdr_tm.so
 vendor/lib/libhdr_tm.so
 
 # Display (SDM)
-vendor/bin/hw/vendor.qti.hardware.display.allocator@1.0-service
-vendor/etc/init/vendor.qti.hardware.display.allocator@1.0-service.rc
-vendor/lib64/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so
-vendor/lib64/hw/gralloc.sdm845.so
-vendor/lib64/hw/hwcomposer.sdm845.so
-vendor/lib64/hw/memtrack.sdm845.so
-vendor/lib64/libdisplaydebug.so
-vendor/lib64/libdrmutils.so
-vendor/lib64/libgpu_tonemapper.so
-vendor/lib64/libgralloccore.so
-vendor/lib64/libgrallocutils.so
-vendor/lib64/libqdutils.so
 vendor/lib64/libqseed3.so
-vendor/lib64/libqservice.so
 vendor/lib64/libsdedrm.so
-vendor/lib64/libqdMetaData.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmcore.so
 vendor/lib64/libsdmextension.so
-vendor/lib64/libsdmutils.so
 vendor/lib64/libtinyxml2_1.so
-vendor/lib/hw/android.hardware.graphics.mapper@2.0-impl-qti-display.so
-vendor/lib/hw/gralloc.sdm845.so
-vendor/lib/hw/hwcomposer.sdm845.so
-vendor/lib/hw/memtrack.sdm845.so
-vendor/lib/libdisplaydebug.so
-vendor/lib/libdrmutils.so
-vendor/lib/libgpu_tonemapper.so
-vendor/lib/libgralloccore.so
-vendor/lib/libgrallocutils.so
-vendor/lib/libqdutils.so
 vendor/lib/libqseed3.so
-vendor/lib/libqservice.so
-vendor/lib/libqdMetaData.so
 vendor/lib/libsdedrm.so
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
 vendor/lib/libsdm-disp-vndapis.so
-vendor/lib/libsdmcore.so
 vendor/lib/libsdmextension.so
-vendor/lib/libsdmutils.so
 vendor/lib/libtinyxml2_1.so
 
 # Display Calibration Data
@@ -660,10 +679,6 @@ vendor/firmware/a630_zap.b01
 vendor/firmware/a630_zap.b02
 vendor/firmware/a630_zap.elf
 vendor/firmware/a630_zap.mdt
-
-# Graphics (Vulkan)
-vendor/lib64/hw/vulkan.sdm845.so
-vendor/lib/hw/vulkan.sdm845.so
 
 # HotwordEnrollment
 -product/priv-app/HotwordEnrollmentOKGoogleWCD9340/HotwordEnrollmentOKGoogleWCD9340.apk
@@ -1028,6 +1043,22 @@ vendor/lib/libqmi_csi.so
 vendor/lib/libqmi_encdec.so
 vendor/lib/libqmiservices.so
 
+# QVR
+system/bin/qvrservice
+etc/qvr/qvrservice_config.txt
+system/lib/libqvrcamera_client.qti.so
+system/lib/libqvrservice.so
+system/lib/libqvrservice_client.qti.so
+system/lib/rfsa/adsp/libdsp_streamer_qvrcam_receiver.so
+system/lib/rfsa/adsp/libeye_tracking_dsp_sample_skel.so
+system/lib/rfsa/adsp/libqvr_cam_dsp_driver_skel.so
+system/lib/rfsa/adsp/libqvr_dsp_driver_skel.so
+system/lib/libqvr_cam_cdsp_driver_stub.so
+system/lib/libqvr_eyetracking_plugin.so
+system/lib/libqvr_cdsp_driver_stub.so
+system/lib64/libqvrcamera_client.qti.so
+system/lib64/libqvrservice_client.qti.so
+
 # RIL
 -product/app/QtiTelephonyService/QtiTelephonyService.apk
 -product/app/embms/embms.apk
@@ -1130,6 +1161,9 @@ vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 
 # Sensors
+system/lib/libsns_device_mode_stub.so
+system/lib/libsns_low_lat_stream_stub.so
+system/lib/libeye_tracking_dsp_sample_stub.so
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service
 vendor/bin/sensors.qti
 vendor/bin/sscrpcd
@@ -1140,23 +1174,34 @@ vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libssc.so
 vendor/lib64/libssc_default_listener.so
+vendor/lib64/libsnsapi.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libsnsdiaglog.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
+vendor/lib64/sensors.PS_ALS.sdm845.so
+vendor/lib64/libcvp_stub.so
+vendor/lib64/libloadalgo_stub.so
+vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so
+vendor/lib/libSensorManagerHAL.so
 vendor/lib/libsensorcal.so
 vendor/lib/libsensorslog.so
 vendor/lib/libssc.so
 vendor/lib/libssc_default_listener.so
+vendor/lib/libsnsapi.so
 vendor/lib/libsns_device_mode_stub.so
 vendor/lib/libsns_fastRPC_util.so
 vendor/lib/libsns_low_lat_stream_stub.so
 vendor/lib/libsnsdiaglog.so
 vendor/lib/sensors.ssc.so
 vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so
+vendor/lib/sensors.PS_ALS.sdm845.so
+vendor/lib/libcvp_stub.so
+vendor/lib/libcvpcpuRev_skel.so
+vendor/lib/libsns_registry_skel.so
 
 # Sensors (Configs)
 vendor/etc/sensors/config/ak0991x_0.json
@@ -1245,10 +1290,6 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 vendor/bin/ssr_setup
 vendor/bin/subsystem_ramdump
 
-# Thermal
-vendor/lib64/hw/thermal.sdm845.so
-vendor/lib/hw/thermal.sdm845.so
-
 # Thermal engine
 vendor/bin/thermal-engine
 vendor/lib64/libthermalclient.so
@@ -1287,10 +1328,6 @@ vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
 vendor/lib/mediadrm/libwvdrmengine.so
-
-# VR
-vendor/lib64/hw/vr.sdm845.so
-vendor/lib/hw/vr.sdm845.so
 
 # WiFi
 vendor/bin/hw/hostapd
