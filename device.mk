@@ -145,7 +145,8 @@ PRODUCT_PACKAGES += \
     libbthost_if \
 
 # Boot control
-PRODUCT_PACKAGES_DEBUG += \
+PRODUCT_PACKAGES += \
+    bootctrl.sdm845 \
     bootctrl.sdm845.recovery
 
 PRODUCT_PACKAGES_DEBUG += \
