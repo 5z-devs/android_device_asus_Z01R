@@ -180,6 +180,7 @@ TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
 
 # Treble
 BOARD_VNDK_VERSION := current
+PRODUCT_FULL_TREBLE_OVERRIDE := true
 
 # Sepolicy
 include device/qcom/sepolicy/sepolicy.mk
