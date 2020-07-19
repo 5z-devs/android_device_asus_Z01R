@@ -324,6 +324,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     vendor/nxp/opensource/pn5xx
 
+# Sensors
+PRODUCT_PACKAGES += \
+    libsensorndkbridge
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
