@@ -345,6 +345,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     thermal.sdm845
 
+# Treble
+PRODUCT_USE_VNDK_OVERRIDE := true
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
