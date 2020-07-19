@@ -372,6 +372,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-qcom \
+    libwifi-hal-ctrl \
     libwpa_client \
     wpa_supplicant \
     wpa_supplicant.conf

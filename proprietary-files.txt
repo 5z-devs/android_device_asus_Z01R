@@ -1345,10 +1345,21 @@ vendor/lib/mediadrm/libwvdrmengine.so
 vendor/bin/hw/hostapd
 vendor/bin/hw/wpa_supplicant
 vendor/bin/cnss-daemon
+vendor/etc/init/vendor.qti.hardware.wifi.wifilearner@1.0-service.rc
+vendor/etc/init/vendor.qti.hardware.wigig.supptunnel@1.0-service.rc
 vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/WCNSS_qcom_cfg.ini
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant.conf
+vendor/etc/wifi/aoa_cldb_falcon.bin
+vendor/etc/wifi/aoa_cldb_swl14.bin
+vendor/etc/wifi/fstman.ini
+vendor/etc/wifi/wigig_p2p_supplicant.conf
+vendor/etc/wifi/wigig_supplicant.conf
+vendor/lib/libaoa.so
+vendor/lib/libwigig_flashaccess.so
+vendor/lib/libwigig_pciaccess.so
+vendor/lib/libwigig_utils.so
 vendor/lib64/libcld80211.so
 vendor/lib64/libkeystore-engine-wifi-hidl.so
 vendor/lib64/libkeystore-wifi-hidl.so
@@ -1356,8 +1367,15 @@ vendor/lib64/libqsap_sdk.so
 vendor/lib64/libwifi-hal-qcom.so
 vendor/lib64/libwifi-hal.so
 vendor/lib64/libwpa_client.so
+vendor/lib64/libaoa.so
+vendor/lib64/libwigig_flashaccess.so
+vendor/lib64/libwigig_pciaccess.so
+vendor/lib64/libwigig_utils.so
 vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.0.so
 vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so
+vendor/lib64/vendor.qti.hardware.wifi.wifilearner@1.0.so
+vendor/lib64/vendor.qti.hardware.wigig.netperftuner@1.0.so
+vendor/lib64/vendor.qti.hardware.wigig.supptunnel@1.0.so
 
 # WiFi Display
 system/bin/wfdservice
