@@ -1345,10 +1345,13 @@ vendor/lib/mediadrm/libwvdrmengine.so
 vendor/bin/hw/hostapd
 vendor/bin/hw/wpa_supplicant
 vendor/bin/cnss-daemon
-vendor/etc/wifi/p2p_supplicant_overlay.conf
-vendor/etc/wifi/WCNSS_qcom_cfg.ini
-vendor/etc/wifi/wpa_supplicant_overlay.conf
+vendor/etc/wifi/fstman.ini
+vendor/etc/wifi/wigig_supplicant.conf
+vendor/etc/wifi/aoa_cldb_falcon.bin
+vendor/etc/wifi/wigig_p2p_supplicant.conf
 vendor/etc/wifi/wpa_supplicant.conf
+vendor/etc/wifi/icm.conf
+vendor/etc/wifi/aoa_cldb_swl14.bin
 vendor/lib64/libcld80211.so
 vendor/lib64/libkeystore-engine-wifi-hidl.so
 vendor/lib64/libkeystore-wifi-hidl.so
@@ -1358,6 +1361,13 @@ vendor/lib64/libwifi-hal.so
 vendor/lib64/libwpa_client.so
 vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.0.so
 vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so
+
+# WiFi firmware
+vendor/firmware/wigig/wigig.ini
+vendor/firmware/wlan/qca_cld/COUNTRY
+vendor/firmware/wlan/qca_cld/wlan_mac.bin
+vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg_fw.ini
+vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
 
 # WiFi Display
 system/bin/wfdservice
