@@ -971,6 +971,18 @@ vendor/lib64/unnhal-acc-hvx.so
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so
 
 # NFC
+vendor/etc/libnfc-mtp-NQ3XX.conf
+vendor/etc/libnfc-mtp-NQ4XX.conf
+vendor/etc/libnfc-mtp_default.conf
+vendor/etc/libnfc-mtp_rf1.conf
+vendor/etc/libnfc-mtp_rf2.conf
+vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nxp.conf
+vendor/etc/libnfc-qrd-NQ3XX.conf
+vendor/etc/libnfc-qrd-NQ4XX.conf
+vendor/etc/libnfc-qrd_default.conf
+vendor/etc/libnfc-qrd_rf1.conf
+vendor/etc/libnfc-qrd_rf2.conf
 vendor/lib/libpn551_fw.so
 vendor/lib/libpn553_fw.so
 vendor/lib/libpn557_fw.so
@@ -1345,10 +1357,13 @@ vendor/lib/mediadrm/libwvdrmengine.so
 vendor/bin/hw/hostapd
 vendor/bin/hw/wpa_supplicant
 vendor/bin/cnss-daemon
-vendor/etc/wifi/p2p_supplicant_overlay.conf
-vendor/etc/wifi/WCNSS_qcom_cfg.ini
-vendor/etc/wifi/wpa_supplicant_overlay.conf
+vendor/etc/wifi/fstman.ini
+vendor/etc/wifi/wigig_supplicant.conf
+vendor/etc/wifi/aoa_cldb_falcon.bin
+vendor/etc/wifi/wigig_p2p_supplicant.conf
 vendor/etc/wifi/wpa_supplicant.conf
+vendor/etc/wifi/icm.conf
+vendor/etc/wifi/aoa_cldb_swl14.bin
 vendor/lib64/libcld80211.so
 vendor/lib64/libkeystore-engine-wifi-hidl.so
 vendor/lib64/libkeystore-wifi-hidl.so
@@ -1358,6 +1373,9 @@ vendor/lib64/libwifi-hal.so
 vendor/lib64/libwpa_client.so
 vendor/lib64/vendor.qti.hardware.wifi.hostapd@1.0.so
 vendor/lib64/vendor.qti.hardware.wifi.supplicant@2.0.so
+
+# WiFi firmware
+vendor/firmware/wigig/wigig.ini
 
 # WiFi Display
 system/bin/wfdservice
