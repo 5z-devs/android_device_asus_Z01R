@@ -109,19 +109,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.r_submix.default \
-    audio.bluetooth.default \
     audio.usb.default \
-    libaudio-resampler \
-    libaudioroute \
-    libhdmiedid \
-    libhfp \
+    libcirrusspkrprot \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libvolumelistener \
-    tinymix \
     libtinycompress \
-    libtinycompress.vendor
+    libvolumelistener \
+    tinymix
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/audio_output_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_output_policy.conf \
