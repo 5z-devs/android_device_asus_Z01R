@@ -292,6 +292,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     power.sdm845
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+
 # QTI
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor \
