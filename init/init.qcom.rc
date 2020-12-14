@@ -168,6 +168,12 @@ on boot
     mkdir /data/vendor/sensors
     chown system system /data/vendor/sensors
 
+    # Enable qcrild and data services
+    enable vendor.qcrild
+    enable vendor.qcrild2
+    enable vendor.dataqti
+    enable vendor.dataadpl
+
 # MSM specific files that need to be created on /data
 on post-fs-data
     mkdir /data/vendor/diag 2771 root log
@@ -317,9 +323,6 @@ on post-fs-data
 
     # Create dir for TUI
     mkdir /data/vendor/tui 0700 system system
-
-    start vendor.qcrild
-    start vendor.qcrild2
 
 service iop /system/vendor/bin/iop
     class main
