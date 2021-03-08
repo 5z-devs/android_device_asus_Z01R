@@ -144,6 +144,9 @@ vendor.display.use_smooth_motion=1
 # DRM
 drm.service.enabled=true
 
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
 # Graphics
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_advanced_sf_phase_offset=1
