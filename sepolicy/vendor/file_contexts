@@ -14,6 +14,9 @@
 /APD/bat_safety                                                             u:object_r:batterystats_file:s0
 /asdf/CHGLimit_kernel                                                       u:object_r:batterystats_file:s0
 
+# Block IO
+/dev/blkio(/.*)?                                                       u:object_r:blkio_file:s0
+
 # Devices
 /dev/block/platform/soc/1d84000.ufshc/by-name/batinfo                       u:object_r:batinfo_block_device:s0
 /dev/block/platform/soc/1d84000.ufshc/by-name/factory		                u:object_r:factory_block_device:s0

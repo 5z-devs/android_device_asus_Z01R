@@ -12,6 +12,9 @@ type dataset_file, vendor_file_type, file_type;
 # Data
 type batterystats_file, file_type;
 
+# files
+type blkio_file, file_type;
+
 # Proc symlinks
 type proc_evtlog, proc_type, sysfs_type, fs_type;
 type proc_touchscreen, proc_type, sysfs_type, fs_type;
