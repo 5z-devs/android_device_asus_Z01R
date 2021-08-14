@@ -58,8 +58,11 @@ debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
 
 # IMS
+persist.dbg.ims_volte_enable=1
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+persist.radio.calls.on.ims=1
 
 # Media
 audio.offload.video=true
