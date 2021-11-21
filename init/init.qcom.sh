@@ -27,17 +27,6 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-start_msm_irqbalance()
-{
-	if [ -f /vendor/bin/msm_irqbalance ]; then
-		start vendor.msm_irqbalance
-	fi
-}
-
-echo 1 > /proc/sys/net/ipv6/conf/default/accept_ra_defrtr
-
-start_msm_irqbalance
-
 #
 # Make modem config folder and copy firmware config to that folder for RIL
 #
