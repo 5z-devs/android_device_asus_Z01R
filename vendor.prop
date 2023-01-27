@@ -153,6 +153,7 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 persist.sys.fuse.passthrough.enable=true
 
 # Graphics
+debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_gl_backpressure=1
