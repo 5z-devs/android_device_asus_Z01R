@@ -480,11 +480,9 @@ PRODUCT_COPY_FILES += \
 
 # VNDK
 PRODUCT_PACKAGES += \
+    libhidlbase_shim \
     libprotobuf-cpp-lite-3.9.1-vendorcompat \
     libutils_shim
-
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v32.so
 
 # VR
 PRODUCT_PACKAGES += \
