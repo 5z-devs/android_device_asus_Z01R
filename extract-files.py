@@ -60,7 +60,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
     'vendor/bin/pm-service': blob_fixup()
         .add_needed('libutils-v33.so'),
-    'vendor/lib64/libwvhidl.so': blob_fixup()
+    ('vendor/lib64/libwvhidl.so', 'vendor/lib64/mediadrm/libwvdrmengine.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
     ('system_ext/lib64/lib-imscamera.so', 'system_ext/lib64/lib-imsvideocodec.so'): blob_fixup()
         .replace_needed('libqdMetaData.so', 'libqdMetaData.system.so')
