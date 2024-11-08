@@ -82,8 +82,6 @@ vendor/lib64/com.qualcomm.qti.ant@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
 # Audio
-product/lib/vendor.qti.hardware.audiohalext@1.0.so
-product/lib64/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib/hw/audio.primary.sdm845.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
@@ -282,7 +280,6 @@ vendor/lib/libmorpho_image_stab4.so
 vendor/lib/libmorpho_video_refiner.so
 vendor/lib/libmpbase.so
 vendor/lib/libst_avatar.so
-vendor/lib/libswregistrationalgo.so
 vendor/lib/libxditk_DITAECInit.so
 vendor/lib/libxditk_DIT_MSMv1.so
 vendor/lib/libxditk_DIT_Manager.so
@@ -704,7 +701,6 @@ vendor/lib/libgcs-calwrapper.so
 vendor/lib/libgcs-ipc.so
 vendor/lib/libgcs-osal.so
 vendor/lib/libgcs.so
-vendor/lib/libjnihelper.so
 vendor/lib/liblistenjni.so
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
@@ -1185,10 +1181,6 @@ vendor/lib64/vendor.qti.hardware.vpp@1.2.so|ca1906012d0ab6dc9048aa49703833512308
 vendor/bin/cnss-daemon
 
 # Misc
-vendor/bin/VerifyVouchers
-vendor/bin/asuskeyd
 vendor/bin/customize_early
 vendor/bin/customize_late
 vendor/bin/customize_mount
-vendor/bin/is_keybox_valid
-vendor/bin/onFgAppChanged
