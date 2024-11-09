@@ -219,6 +219,7 @@ PRODUCT_PACKAGES += \
     hwcomposer.sdm845 \
     libdisplayconfig.qti \
     libqdMetaData \
+    libqdMetaData.system \
     libtinyxml \
     memtrack.sdm845 \
     vendor.display.config@1.0.vendor \
