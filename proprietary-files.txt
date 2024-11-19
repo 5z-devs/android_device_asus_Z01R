@@ -1,10 +1,12 @@
 # All unpinned blobs below are extracted - from Z01R's WW_user_100.10.107.123_20210131
 
-# libcne depends on libwpa_client, which is a gnu makefile target
-# libwqe depends on libwpa_client, which is a gnu makefile target
-# lowi-server depends on libwpa_client, which is a gnu makefile target
+# libcne libwqe, lowi-server, imsdatadaemon depend on libwpa_client, which is a gnu makefile target
 # libril-qcril-hook-oem depends on libril, which is a gnu makefile target
 # libOmxVpp depends on libOmxCore, which is a gnu makefile target
+# libantradio has Unresolved symbol: jniThrowException@LIBNATIVEHELPER_1
+# libxditk_arch has Unresolved symbol: __page_size
+# 32bit libmmcamera_faceproc is unable to resolved the following symbols:
+# __aeabi_memcpy@LIBC_PRIVATE, __aeabi_memset@LIBC_PRIVATE, __gnu_Unwind_Find_exidx@LIBC_PRIVATE
 
 # ACDB
 vendor/etc/acdbdata/MTP/ER2/MTP_Bluetooth_cal_ER2.acdb
@@ -73,8 +75,8 @@ vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
 # ANT+ (system)
 product/lib/com.qualcomm.qti.ant@1.0.so:system_ext/lib/com.qualcomm.qti.ant@1.0.so
 product/lib64/com.qualcomm.qti.ant@1.0.so:system_ext/lib64/com.qualcomm.qti.ant@1.0.so
-system/lib/libantradio.so:system_ext/lib/libantradio.so
-system/lib64/libantradio.so:system_ext/lib64/libantradio.so
+system/lib/libantradio.so:system_ext/lib/libantradio.so;DISABLE_CHECKELF
+system/lib64/libantradio.so:system_ext/lib64/libantradio.so;DISABLE_CHECKELF
 
 # ANT+ (vendor)
 vendor/lib/com.qualcomm.qti.ant@1.0.so;MODULE_SUFFIX=_vendor
@@ -270,7 +272,7 @@ vendor/lib/libcamxstatscore.so
 vendor/lib/libcamxswprocessalgo.so
 vendor/lib/libcamxtintlessalgo.so
 vendor/lib/libcom.qti.chinodeutils.so
-vendor/lib/libmmcamera_faceproc.so
+vendor/lib/libmmcamera_faceproc.so;DISABLE_CHECKELF
 vendor/lib/libmmcamera_faceproc2.so
 vendor/lib/libmms_gyro_vstab.so
 vendor/lib/libmms_gyro_vstab_auth.so
@@ -285,7 +287,7 @@ vendor/lib/libxditk_DITAECInit.so
 vendor/lib/libxditk_DIT_MSMv1.so
 vendor/lib/libxditk_DIT_Manager.so
 vendor/lib/libxditk_ISP.so
-vendor/lib/libxditk_arch.so
+vendor/lib/libxditk_arch.so;DISABLE_CHECKELF
 vendor/lib/libxditk_ditArchLIB.so
 vendor/lib/libxditk_ditBSP.so
 vendor/lib/libxditk_ditBSP_JNI.so
@@ -937,7 +939,7 @@ system_ext/lib64/libimsmedia_jni.so;SYMLINK=system_ext/priv-app/ims/lib/arm64/li
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|4cf9e97f526c6278c5e2136e00d1fb800fb941aa
 system_ext/priv-app/ims/ims.apk|16b82e1e0113beb7fb3a62a9a5513b317675d96e
 vendor/bin/ims_rtp_daemon|32a3ce381b0f85f53a2e9afd7215b3585afef0d6
-vendor/bin/imsdatadaemon|3f044f84eb4049f1ce8a26af6a6026c1776d22dd
+vendor/bin/imsdatadaemon;DISABLE_CHECKELF|3f044f84eb4049f1ce8a26af6a6026c1776d22dd
 vendor/bin/imsqmidaemon|756dcc2d6c7fa26916bc28dedf0c513b1d5e5bfe
 vendor/bin/imsrcsd|bf29aac14856f29268c01599e5f6c7c6ae520685
 vendor/etc/init/ims_rtp_daemon_legacy.rc|104b2a879db4d3dd44e74a3d7f6e69f6972c9129
