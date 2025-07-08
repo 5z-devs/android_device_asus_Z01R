@@ -1,3 +1,6 @@
+# eBPF
+ro.bpf.kver_override=5.4.186
+
 # LMKD
 ro.lmk.low=1001
 ro.lmk.medium=800
