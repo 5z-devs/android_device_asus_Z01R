@@ -131,8 +131,10 @@ vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib/libbtnv.so
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbtnv.so
+
+# Bluetooth - from obiwan - UL-ASUS_I003_1-ASUS-31.0210.0210.272-1.1.5-2304-user
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|ef362fb9666ea511eea3ed3557eb8b7feba1ce82
 
 # Bluetooth (A2DP)
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
