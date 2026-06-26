@@ -182,10 +182,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.memtrack-service
 
-# Configstore
-PRODUCT_PACKAGES += \
-    disable_configstore
-
 # Doze
 PRODUCT_PACKAGES += \
     AsusDoze \
