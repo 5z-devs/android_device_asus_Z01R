@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2018-2024 The LineageOS Project
-#
+# SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -162,6 +161,7 @@ VENDOR_SECURITY_PATCH := 2021-01-05
 
 # SELinux
 TARGET_USES_LOGDUMP_AS_METADATA := true
+include device/lineage/sepolicy/libion/sepolicy.mk
 include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
