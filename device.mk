@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2018-2025 The LineageOS Project
-#
+# SPDX-FileCopyrightText: The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -240,6 +239,9 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.sh \
     init.qti.dcvs.sh
+
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
 
 # IRSC
 PRODUCT_COPY_FILES += \
