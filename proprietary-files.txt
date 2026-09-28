@@ -646,7 +646,7 @@ vendor/lib/libqcodec2_base.so|5bec0dec355c90d2a9739105b6d9810291ab9995
 vendor/lib/libqcodec2_basecodec.so|4013b59c405701bcd9a380f6009924522fe99976
 vendor/lib/libqcodec2_core.so|41bf5b1c5c7c00796d7bda68d7e637ae58e57b37
 vendor/lib/libqcodec2_platform.so|02a602d167bfc4d09fe64132a16c0cb594aafad9
-vendor/lib/libqcodec2_utils.so|867b95c219f59126bbf19bb63fba43f9f7a30462
+vendor/lib/libqcodec2_utils.so|867b95c219f59126bbf19bb63fba43f9f7a30462|f92defe3fb31913db38b472a3f5083e298ad5c8a
 vendor/lib/libqcodec2_v4l2codec.so|0f48aa047e9631c5a1f656080eec1dab8a3d1216
 
 # Media - from PNX - PNX_00WW_FIH-user-11-RKQ1.200906.002-00WW_6_21F-release-keys
