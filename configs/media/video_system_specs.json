@@ -1,5 +1,8 @@
 {
 	"Video": {
+		"Features": {
+			"enc_cvp_enable": false
+		},
 		"Presets": {
 			"enc_default_bframe_count": 1,
 			"enc_max_mbs_per_sec": 3110400
