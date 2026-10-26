@@ -36,14 +36,6 @@ wifi.version.driver                                 u:object_r:customize_prop:s0
 # Audio
 use.audio.eu.parameters                             u:object_r:vendor_audio_prop:s0
 
-# Camera
-camera.                                             u:object_r:camera_prop:s0
-camera.qcom.misc.disable                            u:object_r:default_prop:s0
-media.camera.debug.loglevel                         u:object_r:camera_prop:s0
-persist.camera.                                     u:object_r:camera_prop:s0
-persist.vendor.camera.                              u:object_r:camera_prop:s0
-vendor.debug.camera.                                u:object_r:camera_prop:s0
-
 # Fingerprint
 gf.debug.dump_data                                  u:object_r:fingerprint_goodix_prop:s0
 goodix.fp.service.ready                             u:object_r:fingerprint_goodix_prop:s0
