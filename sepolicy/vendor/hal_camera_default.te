@@ -1,5 +1,0 @@
-allow hal_camera_default proc:file { getattr open read write };
-allow hal_camera_default dataset_file:file lock;
-
-get_prop(hal_camera_default, camera_ro_prop)
-get_prop(hal_camera_default, customize_prop)
