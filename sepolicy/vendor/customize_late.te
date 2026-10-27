@@ -7,8 +7,6 @@ init_daemon_domain(customize_late)
 allow customize_late init:unix_stream_socket connectto;
 allow customize_late kmsg_device:chr_file { getattr open write };
 allow customize_late mnt_vendor_file:dir search;
-allow customize_late persist_drm_file:dir search;
-allow customize_late persist_drm_file:file { open read };
 allow customize_late property_socket:sock_file write;
 allow customize_late sysfs_firmware:file { getattr open read };
 
