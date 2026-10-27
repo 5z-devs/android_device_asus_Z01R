@@ -64,9 +64,9 @@ persist.data.iwlan.enable                           u:object_r:vendor_default_pr
 vendor.oem.bt.addr                                  u:object_r:vendor_rild_prop:s0
 
 # Sensor
-asus.sensor.                                        u:object_r:sensors_prop:s0
-persist.hal.light.hardcode                          u:object_r:sensors_prop:s0
-persist.hal.Proximity.hardcode                      u:object_r:sensors_prop:s0
+asus.sensor.                                        u:object_r:vendor_sensors_prop:s0
+persist.hal.light.hardcode                          u:object_r:vendor_sensors_prop:s0
+persist.hal.Proximity.hardcode                      u:object_r:vendor_sensors_prop:s0
 persist.vendor.sensors.diag_buffer_mode             u:object_r:vendor_sensors_prop:s0
 persist.vendor.sensors.enable.mag_filter            u:object_r:vendor_sensors_prop:s0
 
