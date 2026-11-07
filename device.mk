@@ -329,6 +329,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel/power-libperfmgr \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/qcom-caf/common/libqti-perfd-client \
+    hardware/qcom-caf/sm8250 \
     vendor/qcom/opensource/usb/etc
 
 # Storage
