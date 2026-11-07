@@ -62,7 +62,6 @@ TARGET_KERNEL_CONFIG := vendor/sdm845-perf_defconfig vendor/asus/Z01R.config
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm845
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno630
 
 # Treble
 BOARD_VNDK_VERSION := current
